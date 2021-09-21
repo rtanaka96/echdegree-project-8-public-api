@@ -1,4 +1,5 @@
 /* treehouse provided css (modified from study guide) */
+
 body {
     position: relative;
     background:#ececec;
@@ -6,37 +7,39 @@ body {
     font-family:'Lato', sans-serif;
 }
 .overlay {
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     height:100vh;
-    width:100w;
+    width:100%;
     background: rgba(100, 100, 100, 0.4);
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .noscroll {
     overflow: hidden;
     margin:0;
 }
 .modal {
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
     height:fit-content;
     width:375px;
-    position: fixed;
     text-align: center;
     background: #fff;
     border: 1px solid #778;
     border-radius: 5px;
     padding:30px 20px;
-    
 }
 .modal-close {
-    position: absolute;
-    right: 15px;
-    top: 5px;
+    flex: 0 0;
+    align-self:flex-end;
+    width:10%;
     cursor: pointer;
 }
 .hidden {
