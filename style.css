@@ -20,6 +20,7 @@ body {
 }
 .noscroll {
     overflow: hidden;
+    margin:0;
 }
 .modal {
     height:fit-content;
